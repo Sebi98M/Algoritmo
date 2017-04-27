@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int i,n,cant=0;
+cout << "Ingrese num: ";
+cin >> n;
+while (cant<50){
+i++;
+   if(i%n==0){
+   cant++;
+      cout << i << endl;
+	   
+   }
+}
+return 0;
+}
