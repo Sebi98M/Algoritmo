@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int a,i,p,ne,ce;
+cout << "Ingresar 10 Numeros: " << endl;
+cin >> a;
+for(i=0;i<10;i++){
+	if (i!=9){
+	cin >> a;
+if (a==0){
+ce++;
+}else{
+   if(a>0) {
+      p++;}
+} 
+  if (a<0)
+{
+		  ne++;}  
+}else{
+	cout << "Positivos: ";
+ cout << p << endl ;
+ cout << "Negativos: ";
+ cout << ne << endl ;
+ cout << "Ceros: ";
+ cout << ce << endl;
+	system("pause");
+}
+}
+}
