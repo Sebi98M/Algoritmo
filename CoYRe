@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int r,D,d,i,j=0;
+	cin >> D;
+	cin >> d;
+	for(i=d;i<=D;i+=d){
+	j++;
+	cout << j <<" "<< i << endl;
+}
+cout << "Cociente: " << j << endl;
+r=D-(d*j);
+cout << "Resto: " << r;
+}
