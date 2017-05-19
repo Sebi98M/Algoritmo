@@ -1,0 +1,22 @@
+int operaciones (int a,int b);
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int n,a,b,c,d;
+	cin >> a;
+	cin >> b;
+	operaciones (a,b);
+}
+int operaciones (int a,int b)
+ {
+ 	int Suma= a + b;
+ 	cout << "Suma: " << Suma << endl;
+ 	int Multi= a * b;
+ 	cout << "Multiplicacion: " << Multi << endl;
+ 	int Resta= a - b;
+ 	cout << "Resta: " << Resta << endl;
+ 	return 0;
+ 	
+ }
