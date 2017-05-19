@@ -1,0 +1,29 @@
+int separardigitos (int n);
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int n,a,b,c,d;
+	cin >> n;
+	d = n/100;
+	if (d>0 && d<10)
+	separardigitos (n);
+	else 
+	cout << "No es un numero de 3 digitos";
+
+}
+int separardigitos (int n)
+ {
+ 	int PrimerDigito = n/100;
+ 	cout << "Primer Digito: " << PrimerDigito << endl;
+ 	int i=n%100;
+ 	int SegundoDigito= i/10;
+ 	cout << "Segundo Digito: " << SegundoDigito << endl;
+ 	int TercerDigito=i%10;
+ 	cout << "Tercer Digito: " << TercerDigito << endl;
+ 	int sum = PrimerDigito + SegundoDigito + TercerDigito;
+ 	cout << "La Suma de los Digitos es: " << sum << endl;
+ 	return 0;
+ 	
+ }
