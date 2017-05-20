@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{ 
+	int n,b;
+	cout << "Numero: ";
+	cin >> n;
+	if (n>0 && n<27){
+   char i;  
+   for(i = 'a'; i <= 'z'; i++){
+    b++;
+   if (b==n){
+   cout << "Letra: " << i;
+}
+}
+}
+else 
+cout << "Numero erroneo ingresado";
+   return 0; 
+}
