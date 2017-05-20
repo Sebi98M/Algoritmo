@@ -1,0 +1,33 @@
+int func (int n);
+#include <iostream>
+using namespace std;
+
+int main() {
+int a,n;
+cout << "Ingresar un numero de 4 cifras: ";
+cin >> n;
+a = n/1000;
+if (a>0 && a<10)
+func (n);
+else
+cout << "El numero ingresado es erroneo";
+    return 0;
+}
+int func (int n){
+    int primernum = n/100;
+    cout << "El Primer Num es: " << primernum <<endl;
+    if (primernum%2 == 0)
+    cout << "El Primer Num es Par \n"; 
+    else 
+    cout << "El Primer Nun es Impar";
+    int segundnum = n%100;
+    cout << "El Segundo Num es: " << segundnum <<endl;
+    if (segundnum %2 == 0)
+    cout << "El segundo Num es Par";
+    else
+    cout << "El segundo Num es Impar \n";
+    float sum = primernum + segundnum;
+    float pro = sum/2;
+    cout << "El Promedio es de: " << pro << endl;
+    return 0;
+}
