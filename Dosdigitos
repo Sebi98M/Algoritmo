@@ -1,0 +1,35 @@
+int separardigitos (int n);
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	float n,a,b,c,d;
+	cin >> n;
+	d = n/10;
+	if (d>1 && d<9)
+	separardigitos (n);
+	else 
+	cout << "No es un numero de 2 digitos";
+
+}
+int separardigitos (int n)
+ {
+ 	int PrimerDigito = n/10;
+ 	cout << "Primer Digito: " << PrimerDigito << endl;
+ 	if (PrimerDigito%2==0)
+ 	cout << "El Primer Digito es Par"<<endl;
+ 	else
+ 	cout << "El Primer Digito es Impar"<<endl;
+	 int i=n%10;
+ 	cout << "Segundo Digito: " << i << endl;
+ 		if (i%2==0)
+ 	cout << "El Segundo Digito es Par"<<endl;
+ 	else
+ 	cout << "El Segundo Digito es Impar"<<endl;
+ 	int sum = PrimerDigito + i;
+ 	float pro = sum/2;
+ 	cout << "Su Promedio es de: " << pro << endl;
+ 	return 0;
+ 	
+ }
