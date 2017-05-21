@@ -1,0 +1,17 @@
+float convercion (int f);
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float c,f,r;
+	cout << "Ingresar grados Fahrenheit: ";
+	cin >> f;
+ convercion (f);
+}
+float convercion (int f)
+{
+	float	r = f - 32;
+	float c = r / 1.8;
+	cout << c << " Grados Celcius"; 
+}
