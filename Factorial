@@ -1,0 +1,22 @@
+
+
+ #include<iostream>
+
+using namespace std;
+
+int fact(int);
+int main(){
+  int num,f;
+  cout<<"\nIngrese un Numero: ";
+  cin>>num;
+  f=fact(num);
+  cout<<"\nEl Factorial de "<<num<<" es: "<<f;
+  return 0;
+}
+
+int fact(int n){
+   if(n==1)
+       return 1;
+   else
+       return(n*fact(n-1));
+ }
